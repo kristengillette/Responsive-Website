@@ -230,7 +230,7 @@ Media Queries
 .main-photo {
 	float: right;
 	width: 38%;
-	margin-top: 11.5px 4% 5% 40px;
+	margin: 11.5px 4% 5% 40px;
 }
 
 .contact-info {
