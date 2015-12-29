@@ -1,0 +1,311 @@
+/* ================================= 
+  Base Element Styles
+==================================== */
+
+* {
+	box-sizing: border-box;
+	-webkit-font-smoothing: antialiased;
+}
+
+/* ---- Font Styles ---- */
+
+body {
+	font-family: 'Open Sans', sans-serif;
+	text-align: center;
+	color: #4a4a4a;
+	margin: 0 auto;
+	background-color: #fafafa;
+	line-height: 1;
+}
+
+a {
+	text-decoration: none;
+	color: #4a4a4a;
+}
+
+.name {
+	font-size: 24px;
+	font-weight: 700;
+}
+
+.main-nav {
+	font-size: 14px;
+	font-weight: 700;
+	text-transform: uppercase;
+	text-align: center;
+}
+
+.bio-text {
+	font-size: 16px;
+	font-weight: 300;
+	color: #7f7f7f;
+	line-height: 1.5em;
+}
+
+#portfolio {
+	font-size: 14px;
+	font-weight: 700;
+	text-transform: uppercase;
+
+}
+
+h3 {
+	font-size: 18px;
+}
+
+.portfolio-text {
+	font-size: 15px;
+	font-weight: 300;
+	line-height: 1.5em;
+}
+
+#contact {
+	font-size: 14px;
+	font-weight: 700;
+	text-transform: uppercase;
+}
+
+.contact-info {
+	font-size: 16px;
+	font-weight: 300;
+	color: #7f7f7f;
+	line-height: 1.5em;
+}
+
+.contact-phone, .contact-info {
+	line-height: 28px;
+}
+
+.footer-name {
+	font-size: 14px;
+	font-weight: 700;
+}
+
+.back-to-top {
+	font-size: 12px;
+	font-weight: 700;
+	text-transform: uppercase;
+}
+/* ================================= 
+  Base Layout Styles
+==================================== */
+
+/* ---- Navigation ---- */
+
+.name {
+	margin-top: 26px;
+	margin-bottom: 30px;
+}
+
+.main-nav {
+margin: 0 auto;
+width: 90.625%;
+margin-bottom: 35px;
+}
+
+.main-nav li {
+	background-color: #fff;
+	padding: 13.5px;
+	margin-bottom: 5px ;
+}
+
+.main-nav li a {
+	padding: 13.5px;
+}
+
+.footer-nav {
+	display: none;
+}
+/* ---- Layout Containers ---- */
+
+.main-photo {
+	width: 62.5%;
+
+}
+
+.bio-text {
+margin-left: auto;
+margin-right: auto;
+margin-top: 18.5px;
+margin-bottom: 52px;
+text-align: center;
+width: 87.5%;
+
+}
+
+.portfolio {
+	background-color: #fff;	
+	padding-bottom: 32.5px;
+}
+
+#portfolio {
+	padding: 51px 0;
+
+}
+
+h3 {
+	margin-top: 27.5px;
+	margin-bottom: 16.75px;
+}
+
+.portfolio-text {
+	margin-top: 0;
+	margin-bottom: 45.25px;
+	margin-left: auto;
+	margin-right: auto;
+	width: 83.75%;
+}
+img {
+	width: 90.65%;
+}
+
+.contact {
+	margin: 0 auto;
+	margin-bottom: 65.25px;
+}
+
+#contact {
+	margin-top: 58px;
+	margin-bottom: 0;
+}
+
+.contact-para {
+	margin-top: 38.5px;
+	margin-bottom: 0;
+
+}
+
+.contact-phone {
+	margin-top: 37.5px;
+	margin-bottom: 24.25px;
+}
+
+.contact-email {
+	margin-top: 0;
+	margin-bottom: 0;
+}
+
+.main-footer {
+	border-top: 1px #e7e7e7 solid;
+	margin: 0 auto;
+	width: 90.625%;
+}
+
+.footer-name {
+	float: left;
+	margin-top: 29.5px;
+	margin-bottom: 32.5px;
+}
+
+.back-to-top {
+	margin-top: 31.75px;
+	margin-bottom: 32.5px;
+	float: right;
+
+}
+
+.clearfix::after {
+		content: " ";
+		display: table;
+		clear: both;
+	}
+/* ================================= 
+Media Queries
+==================================== */
+@media (min-width: 768px) {
+.name {
+	margin-top: 60px;
+}
+.main-nav li {
+	background: none;
+	display: inline-block;
+
+}
+
+
+.bio-text {
+	text-align: left;
+	font-size: 20px;
+	float: left;
+}
+
+.contact-info {
+	font-size: 20px;
+
+	}
+
+.main-photo {
+
+}
+
+#portfolio {
+
+}
+
+.portfolio-text {
+	margin: 0 auto;
+
+}
+#gallery {
+
+	list-style: none;
+	background-color: white; 
+}
+
+#gallery li {
+	float: left;
+	max-width: 45%;
+	margin: 2.5%;
+}
+
+#gallery li a p {
+	margin: 0;
+	padding: 5%;
+
+}
+
+.portfolio {
+}
+
+.footer-nav {
+	display: inline;
+	float: right;
+}
+
+.footer-nav li {
+	display: inline-block;
+}
+
+
+.back-to-top {
+	display: none;
+}
+
+.contact {
+}
+.footer-nav {
+	text-transform: uppercase;
+	font-size: 12px;
+	font-weight: 700;
+	}
+}
+
+@media (min-width: 1024px) {
+
+.name {
+	float: left;
+}
+.main-nav {
+	float: right;
+}
+
+.bio {
+	clear: both;
+}
+#gallery li {
+			width: 28.3333%;
+		}
+#gallery li:nth-child(4n) {
+			clear:left;
+		} 
+}
