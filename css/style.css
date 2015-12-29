@@ -16,6 +16,7 @@ body {
 	margin: 0 auto;
 	background-color: #fafafa;
 	line-height: 1;
+	max-width: 1100px;
 }
 
 a {
@@ -98,9 +99,8 @@ h3 {
 }
 
 .main-nav {
-margin: 0 auto;
+margin: 0 auto 35px auto;
 width: 90.625%;
-margin-bottom: 35px;
 }
 
 .main-nav li {
@@ -124,10 +124,7 @@ margin-bottom: 35px;
 }
 
 .bio-text {
-margin-left: auto;
-margin-right: auto;
-margin-top: 18.5px;
-margin-bottom: 52px;
+margin: 18.5px auto 52px auto;
 text-align: center;
 width: 87.5%;
 
@@ -140,6 +137,7 @@ width: 87.5%;
 
 #portfolio {
 	padding: 51px 0;
+	margin: 0 auto;
 
 }
 
@@ -149,10 +147,7 @@ h3 {
 }
 
 .portfolio-text {
-	margin-top: 0;
-	margin-bottom: 45.25px;
-	margin-left: auto;
-	margin-right: auto;
+	margin: 0 auto 45.25px auto;
 	width: 83.75%;
 }
 img {
@@ -160,8 +155,7 @@ img {
 }
 
 .contact {
-	margin: 0 auto;
-	margin-bottom: 65.25px;
+	margin: 0 auto 65.25px auto;
 }
 
 #contact {
@@ -170,8 +164,8 @@ img {
 }
 
 .contact-para {
-	margin-top: 38.5px;
-	margin-bottom: 0;
+	margin: 38.5px auto 0 auto;
+	width: 90%;
 
 }
 
@@ -215,18 +209,28 @@ Media Queries
 @media (min-width: 768px) {
 .name {
 	margin-top: 60px;
+	margin-bottom: 36.5px;
 }
+
 .main-nav li {
 	background: none;
 	display: inline-block;
-
+	padding: 0;
+	margin: 0 5px;
 }
-
 
 .bio-text {
 	text-align: left;
 	font-size: 20px;
 	float: left;
+	width: 45.5%;
+	margin-left: 7.5%;
+}
+
+.main-photo {
+	float: right;
+	width: 38%;
+	margin-top: 11.5px 4% 5% 40px;
 }
 
 .contact-info {
@@ -234,37 +238,42 @@ Media Queries
 
 	}
 
-.main-photo {
-
+#portfolio {
+	padding-top: 60px;
 }
 
-#portfolio {
-
+h3 {
+	margin-top: 30px;
+	margin-bottom: 20px;
 }
 
 .portfolio-text {
 	margin: 0 auto;
 
 }
-#gallery {
 
-	list-style: none;
-	background-color: white; 
+#gallery img {
+	width: 100%;
 }
 
+#gallery {
+	margin: 0 4.4%;
+}
 #gallery li {
 	float: left;
-	max-width: 45%;
-	margin: 2.5%;
+	width: 50%;
+	padding-left: 1%;
+	padding-right: 1%;
+	margin-bottom: 45px;
 }
 
 #gallery li a p {
 	margin: 0;
-	padding: 5%;
 
 }
 
 .portfolio {
+	padding-bottom: 69px;
 }
 
 .footer-nav {
@@ -281,7 +290,21 @@ Media Queries
 	display: none;
 }
 
-.contact {
+#contact {
+	margin-top: 45px;
+}
+
+.contact-para {
+	margin-top: 42px;
+	margin-left: auto;
+	margin-right: auto;
+	width: 70%;
+}
+
+.contact-phone {
+	margin-top: 55px;
+	margin-bottom: 20px;
+
 }
 .footer-nav {
 	text-transform: uppercase;
@@ -290,22 +313,110 @@ Media Queries
 	}
 }
 
+.contact {
+	margin-bottom: 75px;
+}
+
+.footer-name {
+	margin-top: 30px;
+	margin-bottom: 35px;
+}
+
+.footer-nav {
+	margin-top: 30px;
+	margin-bottom: 35px;
+}
+
+.footer-nav li {
+	margin-left: 30px;
+}
+
+.footer-nav li a {
+	padding: 5px 0;
+}
+
 @media (min-width: 1024px) {
 
+header {
+	margin: 0 30px;
+}
 .name {
 	float: left;
+	margin-top: 57px;
+	margin-left: 30px;
+	margin-bottom: 0;
+	width: 50%;
+	text-align: left;
 }
 .main-nav {
+	display: inline;
+}
+
+.main-nav li{
+	margin-top: 67px;	
 	float: right;
 }
 
+
 .bio {
 	clear: both;
+	margin: 0;
 }
+
+.bio-text {
+	margin-left: 30px;
+	margin-top: 124px;
+	margin-bottom: 124px;
+	width: 50%;
+}
+
+.main-photo {
+	margin-right: 30px;
+	width: 36%;
+	margin-top: 60px;
+}
+
+#porfolio {
+padding: 0 60px;
+}
+
+.portfolio-text {
+	width: 95%;
+}
+.portfolio {
+	padding-bottom: 10px;
+	width: 95%;
+	margin: 0 auto;
+}
+
+#gallery {
+	width: 100%;
+	margin: 0 30px ;
+}
+
 #gallery li {
-			width: 28.3333%;
+	width: 31%;
+	margin-bottom: 57px;
 		}
+
 #gallery li:nth-child(4n) {
 			clear:left;
 		} 
+
+#contact {
+	margin-top: 60px;
+	margin-bottom: 40px;
+}
+
+.contact {
+	margin-bottom:80px;
+}
+.contact-para {
+	width: 60%;
+	margin: 0 auto;
+}
+
+.main-footer {
+	width: 88%;
+}
 }
